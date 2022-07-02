@@ -31,10 +31,11 @@ dependencies {
 <com.hoonsa.my_button.MyButton
     ...
     app:gradientOrientation="topRight_bottomLeft"
-    app:gradientColorStart="@color/teal_200"
-    app:gradientColorCenter="@color/teal_500"
-    app:gradientColorEnd="@color/purple_200"
+    app:gradientColorStart="@color/purple_200"
+    app:gradientColorEnd="@color/teal_200"
     app:cornerRadius="20dp"
+    app:borderColor="#FF808080"
+    app:borderWidth="1dp"
     ...
 />
 ```
