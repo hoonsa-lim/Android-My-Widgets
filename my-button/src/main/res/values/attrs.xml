@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="MyButton">
+        <!--    gradient    -->
         <attr name="gradientColorStart" format="color"/>
         <attr name="gradientColorCenter" format="color"/>
         <attr name="gradientColorEnd" format="color"/>
@@ -14,6 +15,12 @@
             <enum name="left_right" value="6"/>
             <enum name="topLeft_bottomRight" value="7"/>
         </attr>
+
+        <!--    corner    -->
         <attr name="cornerRadius" format="dimension"/>
+
+        <!--    border    -->
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="borderColor" format="color"/>
     </declare-styleable>
 </resources>

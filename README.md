@@ -34,6 +34,7 @@ dependencies {
     app:gradientColorStart="@color/teal_200"
     app:gradientColorCenter="@color/teal_500"
     app:gradientColorEnd="@color/purple_200"
+    app:cornerRadius="20dp"
     ...
 />
 ```
