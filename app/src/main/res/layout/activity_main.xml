@@ -7,12 +7,14 @@
     tools:context=".MainActivity">
 
     <com.hoonsa.my_button.MyButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MyButton"
         app:gradientOrientation="topRight_bottomLeft"
         app:gradientColorStart="@color/teal_200"
         app:gradientColorEnd="@color/purple_200"
+        app:cornerRadius="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MyButton"
         android:background="@color/black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

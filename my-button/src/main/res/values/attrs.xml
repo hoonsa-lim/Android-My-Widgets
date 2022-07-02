@@ -14,5 +14,6 @@
             <enum name="left_right" value="6"/>
             <enum name="topLeft_bottomRight" value="7"/>
         </attr>
+        <attr name="cornerRadius" format="dimension"/>
     </declare-styleable>
 </resources>

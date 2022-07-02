@@ -15,7 +15,7 @@ class MyButton @JvmOverloads constructor(
     companion object{
         const val TAG = "MyButton"
 
-        private const val COLOR_DEFAULT = -999999
+        private const val XML_DEFAULT = -999999
     }
 
     init {
@@ -23,17 +23,23 @@ class MyButton @JvmOverloads constructor(
 
         try {
             initGradient(typed)
+            initCorner(typed)
         }finally {
             typed.recycle()
         }
     }
 
+    private fun initCorner(typed: TypedArray) {
+//        val cornerRadius = typed.getDimension(R.styleable.MyButton_cornerRadius, XML_DEFAULT.toFloat())
+//        println("corner radius == $cornerRadius")
+    }
+
     private fun initGradient(typed: TypedArray) {
         val gradientColors = intArrayOf(
-            typed.getColor(R.styleable.MyButton_gradientColorStart, COLOR_DEFAULT),
-            typed.getColor(R.styleable.MyButton_gradientColorCenter, COLOR_DEFAULT),
-            typed.getColor(R.styleable.MyButton_gradientColorEnd, COLOR_DEFAULT)
-        ).filterNot { it == COLOR_DEFAULT }.toIntArray()
+            typed.getColor(R.styleable.MyButton_gradientColorStart, XML_DEFAULT),
+            typed.getColor(R.styleable.MyButton_gradientColorCenter, XML_DEFAULT),
+            typed.getColor(R.styleable.MyButton_gradientColorEnd, XML_DEFAULT)
+        ).filterNot { it == XML_DEFAULT }.toIntArray()
 
         if (gradientColors.isEmpty()) return
         if (gradientColors.size == 1)                           //0개는 그라데이션 사용 x, 1개는 2개 이상 필요, 2개 이상은 정상 작동.
@@ -43,6 +49,11 @@ class MyButton @JvmOverloads constructor(
             GradientDrawable.Orientation.values()[it]
         }
 
-        this.background = GradientDrawable(orientation, gradientColors)
+        val cornerRadius = typed.getDimension(R.styleable.MyButton_cornerRadius, XML_DEFAULT.toFloat())
+        println("corner radius == $cornerRadius")
+
+        this.background = GradientDrawable(orientation, gradientColors, ).apply {
+            setCornerRadius(cornerRadius)
+        }
     }
 }
