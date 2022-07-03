@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.hoonsa.my_button.MyButton
+    <com.hoonsa.my_widget.MyButton
         app:gradientOrientation="topRight_bottomLeft"
         app:gradientColorStart="@color/purple_200"
         app:gradientColorEnd="@color/teal_200"

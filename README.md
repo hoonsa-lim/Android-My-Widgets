@@ -28,7 +28,7 @@ dependencies {
 ```
 ### MyButton
 ```xml
-<com.hoonsa.my_button.MyButton
+<com.hoonsa.my_widget.MyButton
     ...
     app:gradientOrientation="topRight_bottomLeft"
     app:gradientColorStart="@color/purple_200"

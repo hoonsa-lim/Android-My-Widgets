@@ -1,17 +1,12 @@
-package com.hoonsa.my_button
+package com.hoonsa.my_widget
 
 import android.content.Context
-import android.graphics.Color
-import android.graphics.Paint
 import android.graphics.drawable.*
-import android.graphics.drawable.shapes.OvalShape
-import android.graphics.drawable.shapes.RectShape
-import android.graphics.drawable.shapes.RoundRectShape
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatButton
-import com.hoonsa.my_button.extension.initBorder
-import com.hoonsa.my_button.extension.initCorner
-import com.hoonsa.my_button.extension.initGradient
+import com.hoonsa.my_widget.extension.initBorder
+import com.hoonsa.my_widget.extension.initCorner
+import com.hoonsa.my_widget.extension.initGradient
 
 
 class MyButton @JvmOverloads constructor(

@@ -1,4 +1,4 @@
-package com.hoonsa.my_button.extension
+package com.hoonsa.my_widget.extension
 
 import android.content.res.TypedArray
 import android.graphics.drawable.Drawable
@@ -6,8 +6,8 @@ import android.graphics.drawable.GradientDrawable
 import android.graphics.drawable.InsetDrawable
 import android.graphics.drawable.LayerDrawable
 import android.util.Log
-import com.hoonsa.my_button.MyButton
-import com.hoonsa.my_button.R
+import com.hoonsa.my_widget.MyButton
+import com.hoonsa.my_widget.R
 
 internal fun GradientDrawable.initGradient(typed: TypedArray): GradientDrawable {
     val gradientColors = arrayListOf(

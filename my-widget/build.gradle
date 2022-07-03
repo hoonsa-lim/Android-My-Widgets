@@ -10,7 +10,7 @@ afterEvaluate { //add
             release(MavenPublication){
                 from components.release
                 groupId = 'com.hoonsa'
-                artifactId = 'my-button'
+                artifactId = 'my-widget'
                 version = '1.0'
             }
 
@@ -18,7 +18,7 @@ afterEvaluate { //add
                 // Applies the component for the debug build variant.
                 from components.debug
                 groupId = 'com.hoonsa'
-                artifactId = 'my-button'
+                artifactId = 'my-widget'
                 version = '1.0'
             }
         }

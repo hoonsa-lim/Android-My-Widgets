@@ -1,4 +1,4 @@
-package com.hoonsa.my_button
+package com.hoonsa.my_widget
 
 import org.junit.Test
 
